@@ -9,11 +9,14 @@
 }
 
 body {
+    color: white;
     font-family: "Raleway", sans-serif;
     -webkit-font-smoothing: antialiased;
     min-height: 100vh;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./toa-heftiba-W6sqUYlJRiw-unsplash.jpg");
     background-size: cover;
+    display: grid;
+    grid-template-rows: 100px 1fr 100px;
 }
 
 img,
@@ -56,7 +59,7 @@ h6 {
 }
 
 header {
-    border-bottom: 3px solid white;
+    border-bottom: 1px solid white;
 }
 
 nav {
@@ -65,12 +68,45 @@ nav {
     justify-content: center;
     padding: 20px;
     gap: 20px;
+    height: 100%;
 }
 
 header button {
     padding: 10px 20px;
     background: none;
-    font-weight: bold;
-    border: 3px solid white;
+    border: 1px solid white;
     color: white;
+    transition: background .5s;
+}
+
+header button:hover {
+    background-color: white;
+    color: grey;
+    cursor: pointer;
+}
+
+.content h1 {
+    font-size: 5rem;
+}
+
+.content h2 {
+    font-size: 3rem;
+    color: rgb(237, 206, 93);
+}
+
+.intro {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    gap: 20px;
+}
+
+
+footer {
+    border-top: 1px solid white;
 }

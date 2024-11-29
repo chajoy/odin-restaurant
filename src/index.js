@@ -1,5 +1,6 @@
 import "./styles.css";
 import { SetLayoutMenu } from "./menu";
+import { SetLayoutAbout } from "./about";
 
 const container = document.getElementById(`content`);
 
@@ -36,6 +37,11 @@ document.querySelector(`nav`).addEventListener(`click`, (e) => {
         case `btn_menu`:
             ClearDOM();
             container.appendChild(SetLayoutMenu.container);
+            break;
+        case `btn_about`:
+            ClearDOM();
+            container.appendChild(SetLayoutAbout.container);
+            break;
         default:
             break;
     }

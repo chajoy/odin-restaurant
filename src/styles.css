@@ -94,8 +94,14 @@ header button:hover {
     color: rgb(237, 206, 93);
 }
 
+.content p {
+    letter-spacing: 1px;
+    line-height: 25px;
+}
+
 .intro,
-.menu {
+.menu,
+.about {
     height: 100%;
     display: flex;
     align-items: center;
@@ -104,7 +110,7 @@ header button:hover {
     width: 50%;
     margin: auto;
     text-align: center;
-    gap: 40px;
+    gap: 30px;
 }
 
 

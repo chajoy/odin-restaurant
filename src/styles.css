@@ -85,6 +85,10 @@ header button:hover {
     cursor: pointer;
 }
 
+.content {
+    margin: 50px 0;
+}
+
 .content h1 {
     font-size: 5rem;
 }

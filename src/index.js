@@ -1,4 +1,5 @@
 import "./styles.css";
+import { SetLayoutMenu } from "./menu";
 
 const container = document.getElementById(`content`);
 
@@ -29,9 +30,22 @@ const SetLayoutHome = (() => {
 document.querySelector(`nav`).addEventListener(`click`, (e) => {
     switch (e.target.getAttribute(`id`)) {
         case `btn_home`:
+            ClearDOM();
             container.appendChild(SetLayoutHome.container);
             break;
+        case `btn_menu`:
+            ClearDOM();
+            container.appendChild(SetLayoutMenu.container);
         default:
             break;
     }
 });
+
+function ClearDOM() {
+    let content = document.querySelector(`#content div`);
+    if (content) {
+        content.remove();
+    }
+}
+
+container.appendChild(SetLayoutHome.container);

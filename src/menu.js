@@ -46,7 +46,7 @@ export const SetLayoutMenu = (() => {
 
         content.item.textContent = menuItems[x].item;
         content.desc.textContent = menuItems[x].desc;
-        content.price.textContent = menuItems[x].price;
+        content.price.textContent = `£${menuItems[x].price}`;
         content.diet.textContent = menuItems[x].diet;
 
         content.container.appendChild(content.item);
